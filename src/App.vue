@@ -5,6 +5,7 @@
 </template>
 
 <script>
+window.document.title = "free link";
 export default {
   name: 'app'
 }
@@ -18,10 +19,10 @@ body {
   background-color: #f7f8fd;
 }
 a{
-	color: #000000;
+    color: #000000;
 }
 ul li{
-	list-style: none;
+    list-style: none;
 }
 .weui-cells{
     margin-top: 0px!important;

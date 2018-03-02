@@ -15,6 +15,10 @@ FastClick.attach(document.body)
 
 Vue.config.productionTip = false
 
+$.ajaxSetup({
+    data: {csrfmiddlewaretoken: 'JZxKSJHm0tj1N5bNJjXNSYsipPd2rAZX4JjjtBffxoptVKd4lrdDBWJDpaOARopv' },
+});
+
 /* eslint-disable no-new */
 new Vue({
   router,
