@@ -7,6 +7,8 @@ import App from './App'
 import router from './router'
 import  { ToastPlugin, LoadingPlugin } from 'vux'
 
+import store from '@/util/store';
+
 Vue.use(ToastPlugin)
 Vue.use(LoadingPlugin)
 Vue.use(VueRouter)
@@ -15,8 +17,13 @@ FastClick.attach(document.body)
 
 Vue.config.productionTip = false
 
+$.ajaxSetup({
+    data: {csrfmiddlewaretoken: 'JZxKSJHm0tj1N5bNJjXNSYsipPd2rAZX4JjjtBffxoptVKd4lrdDBWJDpaOARopv' },
+});
+
 /* eslint-disable no-new */
 new Vue({
   router,
-  render: h => h(App)
+  render: h => h(App),
+  store: store
 }).$mount('#app-box')
