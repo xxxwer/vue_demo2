@@ -1,6 +1,8 @@
 'use strict';
 
-let wsUri ="ws://172.16.98.163:9501";
+import config from '@/config/config'
+
+let wsUri = config.webSocket;
 let websocket;
 let init = function(MsgCallback) {
     let myws = new myWS(MsgCallback);
