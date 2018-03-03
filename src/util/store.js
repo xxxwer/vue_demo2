@@ -29,8 +29,8 @@ let ws_handle = {
     },
     getAvatar: function(number){
         let img = {
-          2: '/static/img/2.9fb592e.png',
-          3: '/static/img/3.1eeee7d.jpg',
+          2: './static/img/2.9fb592e.png',
+          3: './static/img/3.1eeee7d.jpg',
         }
         return img[number]
     },
@@ -70,7 +70,7 @@ const store = new Vuex.Store({
         // 当前用户
         user: {
             name: 'coffce',
-            img: '/static/img/3.1eeee7d.jpg'
+            img: './static/img/3.1eeee7d.jpg'
         },
         // 会话列表
         sessions: [
@@ -78,7 +78,7 @@ const store = new Vuex.Store({
             //     id: 2,
             //     user: {
             //         name: 'webpack',
-            //         img: '/static/img/3.1eeee7d.jpg'
+            //         img: './static/img/3.1eeee7d.jpg'
             //     },
             //     messages: []
             // },
