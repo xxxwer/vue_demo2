@@ -6,6 +6,7 @@ import Master from '@/components/Master'
 import Home from '@/views/home/Home'
 import KeywordDetail from '@/views/article/KeywordDetail'
 
+import Fuction from '@/views/function/Function'
 import My from '@/views/my/My'
 
 Vue.use(Router)
@@ -22,7 +23,11 @@ export default new Router({
           path:'/Home',
           name:'Home',
           component: Home
-        },,{
+        },{
+          path:'/Fuction',
+          name:'Fuction',
+          component: Fuction
+        },{
           path:'/My',
           name:'My',
           component: My

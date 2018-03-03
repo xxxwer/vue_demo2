@@ -10,6 +10,11 @@
                 <img slot="icon-active" src="../assets/icon-home-active.png">
                 <span slot="label">Ranking</span>
             </tabbar-item>
+            <tabbar-item selected link="/Fuction">
+                <img slot="icon" src="../assets/icon-home.png">
+                <img slot="icon-active" src="../assets/icon-home-active.png">
+                <span slot="label">Fuction</span>
+            </tabbar-item>
             <tabbar-item link="/My">
                 <img slot="icon" src="../assets/icon-my.png">
                 <img slot="icon-active" src="../assets/icon-my-active.png">
